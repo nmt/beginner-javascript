@@ -89,8 +89,130 @@ Assists with consistency in formatting (and opinions), including:
     - e.g.: '' vs. ""
 - Semicolons
 
-### Installing
-npm init
+---
+
+## 6: Types - Introduction
+
+### SNOB'N'US
+String
+Number
+Object
+Boolean
+Null
+Undefined
+Symbol
+
+Everything in JS is an Object.
+
+## 7: Strings
+See `types.html`, `types.js`.
+
+- Double quotes ("")
+    - Allows a single quote within the string
+    - e.g.: "She's so cool"
+- Single quotes ('')
+    - Allows a double quote within the string
+- Backticks (``)
+    - Permits single and double quotes
+    - Maintains line breaks without using \ at the end of each line
+- String concatenation
+    - When a variable is inserted into the string
+    - e.g.: 'Hello ' + name + ', nice to meet you'
+- String interpolation
+    - When a variable is inserted into the string within backticks only
+    - The value within the interpolated string is evaluated, whether it's maths (1+2) or a variable
+    - e.g.: \`Hello ${name}, nice to meet you. I am ${4+5} years old.`
+- Escape character (\\)
+    - Use a backslash to escape the following character
+    - e.g.: 'She\'s so cool'
+
+---
+
+## 8: Numbers
+
+### typeof
+Tells you what the type of the variable/value is
+- `typeof 11 = number`
+- `typeof 'dsadas' = string`
+
+### Math operators
+- Plus is 'loaded' - it can be used for both addition and string concatenation, depending on inputs.
+    - 1 + 1 = 2
+    - 1 + "1" = "11"
+- Subtraction, multiplication, and division, even when used with strings, will be converted into numbers.
+    - "6" / "2" = 3
+- Power (**)
+    - 10 ** 2 = 100
+- Modulo (%)
+    - Tells you what the remainder will be after dividing
+    - 10 % 3 = 1
+
+### Helper methods
+- Math.round()
+- Math.floor(), Math.ceil()
+- Math.random()
+
+### Rounding and precision
+- Computers can only store numbers as integers under the hood
+- Never store money values as dollars and cents in a floating number, represent money as cents.
+    - Bad: 10.34
+    - Good: 1034
+
+### Special values
+- Infinity/-Infinity
+    - Represents values that are greater than the computer can store
+- NaN
+    - Not a Number
+
+---
+
+## 9: Objects
+
+Collections of data and functionality. Arrays and dates are both Objects. Order doesn't matter in Objects (if you need order to matter, use an array).
+
+### Structure
+- Creating an object
+    - `const person = {};`
+- Properties and values
+    - ```
+        const person = {
+            name: 'Tali',
+            age: '9',
+        };```
+- Accessing values
+    - person.name
+
+---
+
+## 10: null and undefined
+
+### undefined
+A value that has been created but not yet defined.
+A variable's value is set to 'undefined' until it's initialised.
+
+### null
+A value of 'nothing'. Set explicitly and intentionally.
+
+---
+
+## 11: Booleans and equality
+
+### Booleans
+True or false. Can be set or calculated.
+
+### Equality
+- =
+    - Assignment operator
+    - `let catName = 'Lucky';`
+- ==
+    - Checks for equality but is real loosey goosey about it
+    - `"1" == 1` returns `true`
+- ===
+    - Use this where possible!
+    - Checks for equality and ensures that values are of the same type, too
+    - `"1" === 1` returns `false`
+    - `50 === 50` returns `true`
+
 
 ---
 
