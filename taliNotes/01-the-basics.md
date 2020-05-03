@@ -75,6 +75,25 @@ e.g.: `name = 'Tali';`
 
 ---
 
+## 5: Code quality tooling with Prettier and ESLint
+
+### [ESLint](https://eslint.org/demo)
+JS linter tool. Notifies you of potentially bad code. Different plugins available for different frameworks (e.g.: React, Vue, etc.).
+
+### [Prettier](https://prettier.io/playground/)
+Assists with consistency in formatting (and opinions), including:
+- Indentation
+- Whitespace
+    - e.g.: const age=100;
+- Quotes for strings
+    - e.g.: '' vs. ""
+- Semicolons
+
+### Installing
+npm init
+
+---
+
 ## Glossary
 | Abbreviation | Meaning | Notes |
 |---|---|---|
